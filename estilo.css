@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('imagen/fondo\ 4.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el encabezado */
+h1 {
+  text-align: center;
+  color: #260101;
+
+}
+
+/* Estilo para el párrafo de bienvenida */
+p {
+  text-align: center;
+  color: #591202;
+}
+
+/* Estilo para el formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F2EBDC;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las etiquetas de los campos de entrada */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #BF7960;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #591202;
+  background-color: #BFAE99;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el campo de calificación */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+/* Estilo para las estrellas de calificación */
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.rating input[type="radio"]:checked~label {
+  color: #BF7960;
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #BF7960;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #591202;
+}
+
+/* Estilo para el menú desplegable */
+select#txtopc {
+  background-color: #BFAE99;
+  color: #591202;
+  padding: 10px;
+  border: 1px solid #BFAE99;
+  border-radius: 5px;
+}
+
+/* Estilo para el campo de ingreso de edad */
+input[type="number"] {
+  background-color: #BFAE99;
+  color: #591202;
+  padding: 10px;
+  border: 1px solid #BFAE99;
+  border-radius: 5px;
+}

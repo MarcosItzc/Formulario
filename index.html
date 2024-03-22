@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Formulario a Cliente</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Encuesta de Satisfacción</h1>
+    <p>¡Bienvenido a la encuesta de satisfacci&oacute;n de Chesed &reg;!<br /></p>
+    <p>¡Muchas gracias por comprar nuestro producto!<br /></p>
+    <form method="post" action="proceso.php">
+        <label for="txtNombre">Nombre: </label>
+        <input type="text" id="txtNombre" name="txtNombre" autofocus required /><br /><br />
+        <label for="txtCorreo">Ingrese su correo: </label>
+        <input type="email" id="txtCorreo" name="txtCorreo" /><br /><br />
+        <label for="txtNum">Ingrese su edad: </label>
+        <input type="number" id="txtEdad" name="txtEdad" min="15" max="99" /><br /><br />
+        <label for="producto">Ingrese el producto que va a calificar: </label>
+        <select id="txtopc" name="txtopc">
+            <option value="Café Clásico">Café Clásico</option>
+            <option value="Café Descafeinado">Café Descafeinado</option>
+            <option value="Granos de Café">Granos de Café</option>
+            <option value="Crema para Café">Crema para Café</option>
+        </select>
+        <br /><br /><label for="txtNombre">¿Como calificar&iacute;a el producto?</label><br />
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+        </div>
+        <label for="comentarios">Comentarios del producto:</label><br>
+        <textarea id="txtCom" name="txtCom" rows="4" cols="50"></textarea><br /><br />
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
